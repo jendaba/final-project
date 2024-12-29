@@ -73,6 +73,30 @@
         návštěva je zdarma. Těšíme se na vás v AktivLife!
       </p>
     </section>
+    <section class="form-container">
+      <h2>Registrace</h2>
+      <form id="registration-form">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Heslo</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Zopakovat heslo</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            required
+          />
+          <div id="error-message" class="error-message"></div>
+        </div>
+        <button type="submit" class="submit-btn" disabled>Registrovat</button>
+      </form>
+    </section>
     <footer></footer>
     <script src="./script.js" defer></script>
   </body>
