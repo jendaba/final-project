@@ -35,3 +35,17 @@ form.addEventListener("submit", function (event) {
   event.preventDefault();
   alert("Registrace proběhla úspěšně!");
 });
+
+// back to top button
+const backToTopButton = document.querySelector(".scroll-top");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    backToTopButton.style.display = "flex";
+  } else {
+    backToTopButton.style.display = "none";
+  }
+});
+
+backToTopButton.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
