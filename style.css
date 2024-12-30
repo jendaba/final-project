@@ -205,6 +205,23 @@ footer a:hover {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+  .first-section {
+    width: 100%;
+    flex-direction: column;
+    height: 800px;
+  }
+
+  .fitness-image {
+    padding: 5px 15px 5px 15px;
+    width: 80%;
+    margin: auto;
+    height: 250px;
+
+    transition: 0.5s ease;
+  }
+  .about-us-section p {
+    text-align: left;
+  }
 }
 
 @media (min-width: 600px) {
