@@ -31,7 +31,7 @@ const validatePasswords = () => {
 password.addEventListener("input", validatePasswords);
 confirmPassword.addEventListener("input", validatePasswords);
 
-form.addEventListener("submit", function (event) {
+form.addEventListener("submit", (event) => {
   event.preventDefault();
   alert("Registrace proběhla úspěšně!");
 });
