@@ -79,6 +79,13 @@ nav li a:hover {
   transition: 0.5s ease;
 }
 
+.color-mode {
+  margin-right: 20px;
+}
+.color-mode:hover {
+  cursor: pointer;
+}
+
 /* FIRST SECTION */
 
 .first-section {
@@ -223,6 +230,10 @@ footer a:hover {
     color: white;
     font-size: 23px;
     margin-left: 20px;
+  }
+  .color-mode {
+    position: absolute;
+    right: 5px;
   }
 
   header nav li {

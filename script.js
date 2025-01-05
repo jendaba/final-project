@@ -49,3 +49,24 @@ window.addEventListener("scroll", () => {
 backToTopButton.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
+// light or dark mode
+const colorMode = document.querySelector(".color-mode");
+const iconMode = document.querySelector("#icon-mode");
+const body = document.body;
+
+const changeIcon = () => {
+  if (iconMode.classList.contains("fa-sun")) {
+    iconMode.classList.remove("fa-sun");
+    iconMode.classList.add("fa-moon");
+    body.classList.remove("light-mode");
+    body.classList.add("dark-mode");
+  } else {
+    iconMode.classList.remove("fa-moon");
+    iconMode.classList.add("fa-sun");
+    body.classList.remove("dark-mode");
+    body.classList.add("light-mode");
+  }
+};
+
+colorMode.addEventListener("click", changeIcon);
