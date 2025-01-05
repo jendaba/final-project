@@ -49,6 +49,7 @@ header {
 nav {
   width: 100%;
   text-align: left;
+  z-index: 1000;
 }
 
 nav li {
