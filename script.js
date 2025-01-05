@@ -36,7 +36,8 @@ form.addEventListener("submit", function (event) {
   alert("Registrace proběhla úspěšně!");
 });
 
-// back to top button
+// back to top button script
+
 const backToTopButton = document.querySelector(".scroll-top");
 window.addEventListener("scroll", () => {
   if (window.scrollY > 100) {
@@ -50,7 +51,8 @@ backToTopButton.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
-// light or dark mode
+// light or dark mode script
+
 const colorMode = document.querySelector(".color-mode");
 const iconMode = document.querySelector("#icon-mode");
 const body = document.body;
